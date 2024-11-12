@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('imgproject2/citybg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #dfb6b2;
+}
+
+.search-section {
+  margin-bottom: 20px;
+}
+
+.search-section input {
+  padding: 10px;
+  width: 200px;
+  font-size: 16px;
+  margin-right: 10px;
+  border-radius: 18px;
+  border: 1px solid #190019;
+  background-color: #4b004ba2;
+  color: white;
+}
+
+.search-section button {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4b004b;
+  color: white;
+  border: 1px solid #190019;
+  transition: background-color 0.3s;
+  border-radius: 20px;
+}
+
+.search-section button:hover {
+  background-color: #190019;
+}
+
+.weather-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+  color: #4b004b;
+}
+
+.present-weather {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.present-weather img {
+  width: 120px; 
+  height: 120px;
+  margin-right: 20px;
+}
+
+.temp-display {
+  font-size: 2em;
+}
+
+.climate-details {
+  text-align: left;
+  margin-left: 20px;
+  flex: 2;
+}
+
+.hourly-weather {
+  margin-top: 20px;
+}
+
+.hourly-weather .hour-block {
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.hourly-weather .hour-block img {
+  width: 50px;
+  height: 50px;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 40px;
+  color: #dfb6b2;
+}
+
+.forecast-day {
+  text-align: center;
+  width: 18%;
+  padding: 10px;
+  border: 1px solid #4b004b;
+  border-radius: 18px;
+  background-color: #4b004b63;
+  color: #fff;
+}
+
+.forecast-day img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.forecast-day h4 {
+  margin-bottom: 10px;
+}

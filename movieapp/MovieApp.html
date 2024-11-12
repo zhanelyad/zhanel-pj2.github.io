@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie and TV App</title>
+    <link rel="stylesheet" href="MovieApp.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> 
+</head>
+<body>
+
+    <header>
+        <div id="header-container">
+            <div id="header-buttons">
+                <button onclick="showMoviesPage()">Movies</button>
+                <button onclick="showTVPage()">TV Shows</button>
+                <button onclick="showWatchlist()">Watchlist</button>
+            </div>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search for a movie or TV series..." oninput="searchMovies()">
+            <i class="fas fa-search" id="search-icon" onclick="toggleSearch()"></i>
+        </div>
+    </header>
+
+    <div id="movies-page" style="display:block;">
+        <div id="movie-container"></div>
+    </div>
+    <div id="watchlist-container" style="display: none;"></div>
+
+    <section id="movie-detail" style="display: none;">
+    <button id="close-detail" onclick="closeMovieDetail()">Close</button>
+
+    <div class="image_and_details">
+        <div id="movie-image"></div>
+        <div class="details-container">
+            <div id="movie-title"></div>
+            <div id="movie-synopsis"></div>
+            <div id="movie-rating"></div>
+            <div id="movie-cast"></div>
+            <div id="movie-crew"></div>
+            <div id="movie-trailers"></div>
+        </div>
+    </div>   
+</section>
+    <script src="MovieApp.js"></script>
+</body>
+</html>
